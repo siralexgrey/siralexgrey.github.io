@@ -8,7 +8,7 @@ body {
     }
 
     100% {
-        transform: rotate(-100deg);
+        transform: rotate(-90deg);
     }
 }
 
@@ -36,13 +36,13 @@ body {
     width: 300px;
 }
 
-.doctor #right_hand {
-    transform-origin:11% 8%;
+.doctor #hand_right {
+    transform-origin:10% 6%;
     transform-box: fill-box;
     animation: armUp 2s infinite ease-in-out alternate;
 }
 
-.doctor #right_hand #arm_and_hand {
+.doctor #hand_right #hand_bottom {
     transform-origin: 12% 8%;
     transform-box: fill-box;
     animation: forearmMove 2s infinite ease-in-out alternate;
