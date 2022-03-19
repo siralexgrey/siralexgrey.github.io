@@ -1,0 +1,69 @@
+body {
+    background-color: #000;
+}
+
+@keyframes armUp {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-100deg);
+    }
+}
+
+@keyframes forearmMove {
+    0% {
+        transform: rotate(0)
+    }
+
+    40% {
+        transform: rotate(-60deg);
+    }
+
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+
+.doctor {
+    width: 400px;
+    overflow: visible;
+}
+
+.doctor #Doctor {
+    width: 300px;
+}
+
+.doctor #right_hand {
+    transform-origin:11% 8%;
+    transform-box: fill-box;
+    animation: armUp 2s infinite ease-in-out alternate;
+}
+
+.doctor #right_hand #arm_and_hand {
+    transform-origin: 12% 8%;
+    transform-box: fill-box;
+    animation: forearmMove 2s infinite ease-in-out alternate;
+}
+
+#right_hand #origin {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    content: '';
+    background-color: #f0f;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.doctor2 {
+    width: 500px;
+}
+
+.doctor img {
+    position: absolute;
+}
